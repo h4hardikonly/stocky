@@ -18,9 +18,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'erubis'
 
 # view related
-gem 'bootstrap-sass', '~> 3.3.6'
 gem 'haml' # cause erb sucks
 gem 'haml-rails' # generate haml templates when using rails generators
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
