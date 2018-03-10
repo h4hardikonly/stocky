@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20171028202643) do
     t.string "symbol", limit: 20
     t.string "name"
     t.integer "face_value", limit: 2, unsigned: true
+    t.string "stock_exchange", limit: 20
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

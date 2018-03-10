@@ -4,7 +4,7 @@ module Equities::EquitySynchronizerService
       begin
         equity = Equity.find_by(symbol: source_obj.symbol)
         if equity.present?
-          EquityUpdaterService.new(equity).update_face_value if equity.face_value != source_obj.face_value
+          EquityUpdaterService.new(equity, source_obj).update
         else
           Equity.create!(symbol: source_obj.symbol, name: source_obj.name_of_company, face_value: source_obj.face_value)
         end

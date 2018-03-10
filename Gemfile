@@ -23,6 +23,9 @@ gem 'haml-rails' # generate haml templates when using rails generators
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 
+# Stock API related
+gem 'nse', path: '/Users/hardikjoshi/work/work/nse/'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
